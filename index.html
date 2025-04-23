@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Main.js" type="module" defer></script>
+</head>
+
+<body>
+    <h1>
+        My Website
+    </h1>
+    <h3>
+        <button id="toggle-btn" class="btn-style">Dark Mode</button>
+    </h3>
+
+    <section class="hero-section">
+
+        <label for="number1"></label>
+        <input type="number" id="number1" />
+
+        <label for="number2"></label>
+        <input type="number" id="number2" />
+
+        <label for="operator">Select operator</label>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="^">^</option>
+            <option value="PI">PI</option>
+            <option value="E">E</option>
+        </select>
+
+        <button id="calculator-btn" class="btn-style">Calculate</button>
+
+        <p class="result">Sum: <span id="result">0</span></p>
+    </section>
+</body>
+
+</html>
