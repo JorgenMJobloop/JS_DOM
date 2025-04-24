@@ -39,14 +39,14 @@ calculatorButton.addEventListener("click", function calculateSum() {
             break;
         case "*":
             result = number1 * number2;
-            console.log(result);
+            //console.log(result);
             break;
         case "/":
             if (number2 == 0) {
                 //console.error("Cannot divide by 0!");
             }
             else {
-                result = Math.floor(number1 / number2);
+                result = number1 / number2;
                 //console.log(result);
             }
             break;
@@ -57,8 +57,12 @@ calculatorButton.addEventListener("click", function calculateSum() {
             result = Math.PI;
             break;
         case "E":
-            result = Math.E;
-            document.getElementById("result").textContent = "Natural logarithm E", result;
+            if (number1 <= 2 || number1 === null) {
+                // console.log(result);
+                // console.log(number1);
+                result = Math.pow(Math.E, 1);
+            }
+            result = Math.pow(number1, Math.E);
             break;
         default:
             result = "Invalid operator!";
